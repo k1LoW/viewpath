@@ -17,3 +17,6 @@ Second, add the following code in app_controller.php.
     var $components = array('Viewpath.Viewpath');
 </pre>
 
+Click icon.
+
+!http://github.com/k1LoW/viewpath/raw/master/snap.png!
