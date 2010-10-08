@@ -1,0 +1,19 @@
+h1. Viewpath: View file path display plugin for CakePHP
+
+for Designer...
+
+h2. Features
+
+* Display (layout, view, element) file path of current page.
+
+h2. Usage
+
+First, put `viewpath' directory on app/plugins in your CakePHP application.
+Second, add the following code in app_controller.php.
+
+<pre>
+<?php
+  class AppController extends Controller {
+    var $components = array('Viewpath.Viewpath');
+</pre>
+
