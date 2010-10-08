@@ -33,10 +33,9 @@ class ListHelper extends AppHelper {
         // view
         array_push($view->ctp, $viewPath . $view->params['controller'] . '/' . $view->params['action'] . $view->ext);
 
-        $viewFiles = '<ul style="margin-left: 15px;list-style-type:circle;"><li>' . implode("</li><li>", $view->ctp) . '</li></ul>';
+        $viewFiles = '<ul style="margin-left:15px;list-style-type:circle;color:#000000;"><li>' . implode("</li><li>", $view->ctp) . '</li></ul>';
 
         $tip = '';
-
         $style = 'position: fixed;
                   border-bottom:1px solid #AAAAAA;
                   background:-moz-linear-gradient(center top , #EFEFEF, #CACACA) repeat scroll 0 0 transparent;
