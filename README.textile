@@ -16,10 +16,16 @@ Second, add the following code in app_controller.php.
 <pre>
 <?php
 class AppController extends Controller {
-    var $components = array('DebugKit.Toolbar' => array('panels' => 'Viewpath.viewpath'));
+    var $components = array('DebugKit.Toolbar' => array('panels' => array('Viewpath.viewpath')));
 }
 ?>
 </pre>
+
+!http://github.com/k1LoW/viewpath/raw/master/debugkit.png!
+
+h4. Requirement
+
+* DebugKit
 
 h3. Standalone
 
@@ -34,4 +40,8 @@ Second, add the following code in app_controller.php.
 
 Click icon.
 
-!http://github.com/k1LoW/viewpath/raw/master/snap.png!
+!http://github.com/k1LoW/viewpath/raw/master/standalone.png!
+
+h4. Requirement
+
+* jQuery
