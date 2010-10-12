@@ -6,7 +6,22 @@ h2. Features
 
 * Display (layout, view, element) file path of current page.
 
-h2. Usage
+h2. Usage 
+
+h3. with DebugKit
+
+First, put `viewpath' directory on app/plugins in your CakePHP application.
+Second, add the following code in app_controller.php.
+
+<pre>
+<?php
+class AppController extends Controller {
+    var $components = array('DebugKit.Toolbar' => array('panels' => 'Viewpath.viewpath'));
+}
+?>
+</pre>
+
+h3. Standalone
 
 First, put `viewpath' directory on app/plugins in your CakePHP application.
 Second, add the following code in app_controller.php.
@@ -20,7 +35,3 @@ Second, add the following code in app_controller.php.
 Click icon.
 
 !http://github.com/k1LoW/viewpath/raw/master/snap.png!
-
-h2. Requirement
-
-* jQuery
