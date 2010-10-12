@@ -51,3 +51,6 @@ h2. Author
 Kenichirou Oyama <k1lowxb@gmail.com>
 slywalker <slywalker.net@gmail.com>
 
+h2. License
+
+MIT License
