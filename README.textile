@@ -45,3 +45,9 @@ Click icon.
 h4. Requirement
 
 * jQuery
+
+h2. Author
+
+Kenichirou Oyama <k1lowxb@gmail.com>
+slywalker <slywalker.net@gmail.com>
+

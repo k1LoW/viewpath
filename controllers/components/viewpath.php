@@ -17,6 +17,7 @@ class ViewpathComponent extends Object {
         } else {
             $controller->view = 'Viewpath.Path';
         }
+
         $controller->helpers[] = 'Viewpath.List';
     }
 
