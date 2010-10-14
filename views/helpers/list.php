@@ -11,6 +11,11 @@ class ListHelper extends AppHelper {
 
         parent::afterLayout();
         $view =& ClassRegistry::getObject('view');
+
+        if (!$view) {
+            return false;
+        }
+
         $view->output = $view->output;
 
         if (empty($view->ctp)) {
@@ -20,7 +25,7 @@ class ListHelper extends AppHelper {
         $viewPath = APP . 'views/';
 
         if ($view->theme) {
-            $viewPath = APP . 'views/themed/' . $this->theme;
+            $viewPath = APP . 'views/themed/' . $view->theme;
         }
 
         if ($view->params['plugin']) {
